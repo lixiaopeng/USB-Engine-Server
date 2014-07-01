@@ -86,7 +86,12 @@
             RECOVERY : 1029,  // Phone enter recovery mode
             ADB_SERVER_ERROR_WDJ : 1034,  // The inner state of adb server is error, which is provided by wdj.
             ADB_SERVER_ERROR_OTHER : 1035,  // The inner state of adb server is error, which is provided by other pc suite.
-            ADB_SERVER_KILL_ERROR : 1036  // Kill adb process error
+            ADB_SERVER_KILL_ERROR : 1036,  // Kill adb process error
+
+            // ////////////////////////////////////////////////////////////////////////
+            // State for post connection
+            // ////////////////////////////////////////////////////////////////////////
+            NEED_USER_WAITING : 2000
         };
     });
 }(this));

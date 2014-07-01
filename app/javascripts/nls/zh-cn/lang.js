@@ -44,5 +44,10 @@ define({
     USB_GUIDE_LOCAL_GUIDE_41 : '4.0 及以上',
     USB_GUIDE_LOCAL_GUIDE_42 : '4.2',
     USB_GUIDE_LOCAL_GUIDE_MIUI : 'MIUI V5',
-    USB_GUIDE_LOCAL_ALREADY_TURN_ON : '我已打开'
+    USB_GUIDE_LOCAL_ALREADY_TURN_ON : '我已打开',
+
+    CONNECTION_MANAGE : '连接手机后才能管理手机，请稍等...',
+    CONNECTION_BACKUP : '连接手机后才能备份恢复，请稍等...',
+    CONNECTION_XIBAIBAI : '连接手机后才能洗白白，请稍等...',
+    CONNECTION_DOWNLOAD : '连接手机后才能将内容传输到手机，请稍等...'
 });

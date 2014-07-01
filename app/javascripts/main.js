@@ -153,6 +153,9 @@
             case STATE.OFFLINE_OTHER:
                 offlineOther(obj);
                 break;
+            case STATE.NEED_USER_WAITING:
+                showForUserWaiting(obj);
+                break;
             default:
                 if (obj.state >= 0) {
                     connectingStart(obj);
@@ -160,6 +163,20 @@
             } else {
                     connectingError(obj);
                 }
+            }
+        };
+
+        var showForUserWaiting = function (data) {
+            show('connecting-start');
+            var currentModule = data.currentModule;
+            if (/app|contact|video|music|message/.test(currentModule)) {
+                $('.g-tips').html(i18n.CONNECTION_MANAGE);
+            } else if (currentModule === 'backup'){
+                $('.g-tips').html(i18n.CONNECTION_BACKUP);
+            } else if (currentModule === 'xibaibai') {
+                $('.g-tips').html(i18n.CONNECTION_XIBAIBAI);
+            } else {
+                $('.g-tips').html(i18n.CONNECTION_DOWNLOAD);
             }
         };
 
