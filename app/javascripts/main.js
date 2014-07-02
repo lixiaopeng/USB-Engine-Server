@@ -170,11 +170,11 @@
         var showForUserWaiting = function (data) {
             show('connecting-start');
             var currentModule = data.currentModule;
-            if (/app|contact|video|music|message/.test(currentModule)) {
+            if (/app|contact|video|music|message|photo/.test(currentModule)) {
                 $('.g-tips').html(i18n.CONNECTION_MANAGE);
-            } else if (currentModule === 'backup'){
+            } else if (currentModule === 'backup-restore'){
                 $('.g-tips').html(i18n.CONNECTION_BACKUP);
-            } else if (currentModule === 'xibaibai') {
+            } else if (currentModule === 'app-wash') {
                 $('.g-tips').html(i18n.CONNECTION_XIBAIBAI);
             } else {
                 $('.g-tips').html(i18n.CONNECTION_DOWNLOAD);
