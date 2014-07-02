@@ -155,6 +155,7 @@
                 break;
             case STATE.NEED_USER_WAITING:
                 showForUserWaiting(obj);
+                animation();
                 break;
             default:
                 if (obj.state >= 0) {
